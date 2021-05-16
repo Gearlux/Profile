@@ -1,8 +1,32 @@
 # Personal Details
 
-Surname	            :  Behiels
-First name	        :  Gert
-Date of birth	    :  Feb 1972 
-Place of residence	:  Edegem - Belgium
-Nationality	        :  Belgian
+<table class="tg">
+<thead>
+  <tr>
+    <td class="tg-73oq">Name</td>
+    <td class="tg-73oq">Behiels</td>
+    <th class="tg-73oq" rowspan="5"><img src="https://github.com/Gearlux/Profile/blob/main/images/Profile.png" width="200" height="150"></th>
+  </tr>
+  <tr>
+    <td class="tg-73oq">First name</td>
+    <td class="tg-73oq">Gert</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">Date of birth</td>
+    <td class="tg-73oq">Feb 1972</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">Place of residence</td>
+    <td class="tg-73oq">Edegem - Belgium</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">Nationality</td>
+    <td class="tg-73oq">Belgian</td>
+  </tr>
+</thead>
+</table>
 
+# [Profile and Ambition](Ambition.md)
+# [Education and Courses](Education.md)
+# [Work Experience and Additional Qualifications](Work.md)
+# [Extracurricular Activities and Interests](Extra.md)
