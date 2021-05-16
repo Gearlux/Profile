@@ -1,4 +1,4 @@
-# PROFILE & AMBITION
+# Profile and Ambition
 
 I am a creative and innovative researcher who likes a challenge. I find it difficult to tolerate that some technical problems remain unsolved and will always go for the extra mile if I believe that a solution is within my capabilities. I am very efficient in the investigation and analysis of image processing, computer vision and related problems and during the break down of an application, I can become very enthusiastic if an ‘out of the box’ solution combined with already existing and proven techniques brings me closer to the final solution or product.
 
