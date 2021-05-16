@@ -24,29 +24,21 @@ The position is described in more detail in the [portfolio](Portfolio.md)
 | C# | | 2 years | | |
 | OpenCL| | 2 years | | |
 | CUDA | | 2 years | | |
-| Python | | | | 17 years |
-| - Numpy | | | | |
-| - Scipy | | | | |
-| - Scikit-learn | | | | |
-| - skimage | | | | |
-| - OpenCV | | | | |
-| - PCL | | | | |
-| - ITK | | | | |
-| - ... | | | | |
+| **Python** <br> - Numpy <br> - Scipy <br> - Scikit-learn <br> - skimage <br> - OpenCV <br> - PCL <br> - ITK <br> ...| | | | 17 years |
 | PyTorch | | 3 years | | |
 | Keras	| 1 year | | | |
 | **Equipment/Hardware/Tools** | | | | |	
 | Depth camera’s | | | 5 years	| |
 | **Project Planning/Management** | | | | |	
 | Scrum Master | | 4 years | | |
-| Project Planning <br> Trello / TaskJuggler <br> (MS Project) | | 4 years | | |
+| *Project Planning* with <br> Trello / TaskJuggler <br> (MS Project) | | 4 years | | |
 
 ## Language Skills
 
 | | Speaking | Writing |
 | --- | --- | --- |
 | Dutch | Native | Native |
-| English |	Fluent | Fluent |
+| English | Fluent | Fluent |
 | German | Beginner |Beginner |
 | French | Proficient | Intermediate |
 
