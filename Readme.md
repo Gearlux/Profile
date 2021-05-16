@@ -26,7 +26,9 @@
 </thead>
 </table>
 
-# [Profile and Ambition](Ambition.md)
-# [Education and Courses](Education.md)
-# [Work Experience and Additional Qualifications](Work.md)
-# [Extracurricular Activities and Interests](Extra.md)
+## [Profile and Ambition](Ambition.md)
+## [Education and Courses](Education.md)
+## [Work Experience and Additional Qualifications](Work.md)
+## [Extracurricular Activities and Interests](Extra.md)
+## [Portfolio](Portfolio.md)
+## [Publications](Publications.md)
