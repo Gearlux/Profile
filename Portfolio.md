@@ -80,7 +80,6 @@ The result was a roadmap where key topics were identified: mobile imaging, workf
 [SmartXR](Portfolio.md#smartxr) and 
 [Deep learning projects](Portfolio.md#deep-learning-projects).
 
-
 ### Responsibilities
 Innovation Manager, Software Architect, Team Lead
 
@@ -93,7 +92,6 @@ Automatic image stitching of DR images.
 Develop a method for FLFS (Full Leg Full Spine) imaging for DR images with similar quality requirements as the one-shot CR FLFS.
 
 ![](images/dxd300.png)
-
 
 ### Action
 I developed the interface to the modality, the module computing the optimal position of the images while keeping the X-ray source stable and the image processing module which stitches the images and detects possible patient movement during the acquisition. Because the old C R stitch grid, could not be used, I developed a new stitch grid which was enabled the correction of the patient movement and which was less disturbing for the radiologist. With the mechanical team in Munich, I co-designed a patient stand which ensures that the patient could stand still and protected the patient from the moving parts of the modality.
@@ -114,7 +112,7 @@ Having access to many image processing methods for mammo, I was asked to contrib
 
 ### Action
 
-| ![](images/mammo1.png) | Nipple Alignment <br> Zoom To Breast | ![](images/mammo2.png) |
+| ![](images/mammo1.png) | Nipple Alignment <br> Zoom To Breast | ![](images/mammo2.png)  |
 
 With the application team, I identified a couple of features which were technically feasible to implement: nipple/breast alignment, background darkening, zoom to breast.  I also implemented a workflow engine, that can be configured to support the workflow that is used within a particular hospital. In addition, I invented and implemented UI improvements like synchronized zooming and a new zooming method for PACS applications. After a couple of years, I became team lead of the mammography workstation, leading a remote team of developers in Vienna. For the backend, I was the architect for a structured report engine extension which enabled many image processing addons, including third party applications.
 
@@ -137,6 +135,7 @@ After a presegmentation of the mammography, more than 15000 features are extract
 
 ### Result
 ![](images/cad.png)
+
 The result was a CAD engine, superior to the existing R2 cad engine. Prof. Carla Boetes† was so enthusiastic that she wanted to get European Funding to continue this project. Unfortunately, because of lack of interest from Agfa’s management and the passing away of Prof. Boetes, the project was stopped. To bypass FDA regulations for CAD engines, we amplified the detections of the micro-calcification engine within a Musica package, leaving the diagnosis up to the radiologists. Because of the strong amplification, it is nearly impossible for the radiologist to miss the malignant calcification, even after a long working day.
 
 ![](images/mce1.png) ![](images/mce2.png)
@@ -148,10 +147,19 @@ Project Lead, Software Architect, Software Developer
 Automatic detection, modelling and correction of static anti-scatter grids in digital RX.
 
 ### Task
-Build upon the technology of the Microlens-artefact correction project, a filter was designed to remove the anti scatter gridlines from the image. The high frequent pattern caused aliasing within the NX workstation display.
+Build upon the technology of the [Microlens-artefact correction](Portfolio.md#microlens-artefact-correction) project, a filter was designed to remove the anti scatter gridlines from the image. The high frequent pattern caused aliasing within the NX workstation display. On the left image in the animation you can see moire-artifacts, after filtering zooming in the right filtered images keeps the image clear.
+
+![](images/gls_zoom.gif)
 
 ### Action
-Patent searches showed that it was not trivial to suppress the gridlines while keeping the contrast needed for diagnostic imaging. Based on wavelet decomposition, I managed to develop a non-linear filter which was able to perfectly separate the diagnostic image content from the gridlines. Even steep edges are not affected by the filtering.
+Patent searches showed that it was not trivial to suppress the gridlines while keeping the contrast needed for diagnostic imaging. Based on wavelet decomposition, I managed to develop a non-linear filter which was able to perfectly separate the diagnostic image content from the gridlines. Even steep edges are not affected by the filtering. 
+
+![](images/gls.png) ![](images/gls.gif)
+
+The detection of the grid was implemented with Fourier Analysis and Support Vector Machines.
+The red dots indicate the images without grid and the blue dots the images with grid. The threshold is shifted to the red dots in order not to miss any grid, since the filter is very conservative for these images the filtering does not have any effect.
+
+![](images/svm.gif)
 
 ### Result
 A new method for gridlines filtering, validated for CR and DR imaging
@@ -175,7 +183,11 @@ A validated filter which was able to process the images within time. During the 
 Software Developer
 
 ## Statistical models of anatomical structures in digital RX
-In this IWT-project and associated PhD, this was my introduction to image processing in general and medical image processing in particular. The project was done within the Medical Image Computing group at the Medical Imaging Research Center at the University Hospital UZ Leuven - Gasthuisberg.
+In this IWT-project and associated PhD, this was my introduction to image processing in general and medical image processing in particular. The project was done within the [Medical Image Computing](https://www.kuleuven.be/samenwerking/mirc/research-groups/MIC/mission.html) group at the [Medical Imaging Research Center](https://www.kuleuven.be/samenwerking/mirc/index.html) at the [University Hospital UZ Leuven - Gasthuisberg](https://www.uzleuven.be/en/gasthuisberg).
 
 ### Task
-The main task of this project was the automatic registration, segmentation and classification of bones in digital RX for automatic bone age assessment with “active shape models”.  In order to build the models, non rigid point matching was used to align several manual segmented bones. The segmentation was made ‘efficient’ by using dynamic programming within a special UI application. Before registration large scale inhomogeneities caused by the heel effect are compensated. The registration is done hierarchically, where first the hand is located and this location is further drilled down to fingers and bones. The position of the bones is used as a starting position for the active shape models. 
+![](images/heel.png)
+
+The main task of this project was the automatic registration, segmentation and classification of bones in digital RX for [automatic bone age assessment](https://en.wikipedia.org/wiki/Bone_age) with “[active shape models](https://en.wikipedia.org/wiki/Active_shape_model)”.  In order to build the models, [non rigid point matching](https://www.cise.ufl.edu/~anand/students/chui/tps-rpm.html) was used to align several manual segmented bones. The segmentation was made ‘efficient’ by using dynamic programming within a special UI application. Before registration large scale inhomogeneities caused by the heel effect are compensated. The registration is done hierarchically, where first the hand is located and this location is further drilled down to fingers and bones. The position of the bones is used as a starting position for the active shape models. 
+
+![](images/bone.png)![](images/hand_registration.png)![](images/hand_segmentation.png)
