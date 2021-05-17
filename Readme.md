@@ -5,7 +5,7 @@
   <tr>
     <td class="tg-73oq">Name</td>
     <td class="tg-73oq">Behiels</td>
-    <th class="tg-73oq" rowspan="5"><img src="https://github.com/Gearlux/Profile/blob/main/images/Profile.png" width="200" height="150"></th>
+    <th class="tg-73oq" rowspan="5"><img src="images/Profile.png" width="200" height="150"></th>
   </tr>
   <tr>
     <td class="tg-73oq">First name</td>
