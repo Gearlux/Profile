@@ -1,4 +1,6 @@
-# Personal Details
+<img src="images/qr-code.png" width="200" height="150">
+
+# Personal Details 
 
 <table class="tg">
 <thead>
@@ -37,3 +39,5 @@
 - [DR Roadmap](Portfolio.md#dr-roadmap)
 - [...](Portfolio.md#full-leg-full-spine)
 ## [Publications](Publications.md)
+
+
