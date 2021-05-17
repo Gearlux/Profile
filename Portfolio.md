@@ -58,6 +58,8 @@ Such a volume stacks, reduces the overlap of anatomical structures.
 ### Action
 After some prototyping, I created the interface to the modality to acquire the images. I also wrote the core of the tomosynthesis reconstruction engine. As far as I know, this is still the fastest iterative reconstruction engine today.
 
+![](images/tomo.gif)
+
 ### Result
 The developed software is now used as a clinical product and is the base of further development within this product range.
 
@@ -85,14 +87,21 @@ Innovation Manager, Software Architect, Team Lead
 ## Full Leg Full Spine
 Automatic image stitching of DR images. 
 
+![](images/dr600.png)
+
 ### Task
 Develop a method for FLFS (Full Leg Full Spine) imaging for DR images with similar quality requirements as the one-shot CR FLFS.
+
+![](images/dxd300.png)
+
 
 ### Action
 I developed the interface to the modality, the module computing the optimal position of the images while keeping the X-ray source stable and the image processing module which stitches the images and detects possible patient movement during the acquisition. Because the old C R stitch grid, could not be used, I developed a new stitch grid which was enabled the correction of the patient movement and which was less disturbing for the radiologist. With the mechanical team in Munich, I co-designed a patient stand which ensures that the patient could stand still and protected the patient from the moving parts of the modality.
 
 ### Result
 A new stitch grid, a new patient stand and new, more robust algorithms were designed, implemented and validated. 
+
+![](images/grid.png)
 
 ### Responsibilities
 Project Lead, Software Developer
@@ -104,10 +113,15 @@ Innovative, automatic methods to enhance mammography hanging protocols.
 Having access to many image processing methods for mammo, I was asked to contribute to the development of Agfa’s new mammography workstation, developed within the Agility project.
 
 ### Action
+
+| ![](images/mammo1.png) | Nipple Alignment <br> Zoom To Breast | ![](images/mammo2.png) |
+
 With the application team, I identified a couple of features which were technically feasible to implement: nipple/breast alignment, background darkening, zoom to breast.  I also implemented a workflow engine, that can be configured to support the workflow that is used within a particular hospital. In addition, I invented and implemented UI improvements like synchronized zooming and a new zooming method for PACS applications. After a couple of years, I became team lead of the mammography workstation, leading a remote team of developers in Vienna. For the backend, I was the architect for a structured report engine extension which enabled many image processing addons, including third party applications.
 
+![](images/mammo_zoom.gif)
+
 ### Result
-The results was a state of the art mammography workstation, which still is being demoed on RSNA and ECR as one of the flagships in the Agfa PACS portfolio.
+The results was the state of the art mammography workstation, which still is being demoed on RSNA and ECR as one of the flagships in the Agfa PACS portfolio.
 
 ### Responsibilities
 Scrum Master, Team Lead, Software Architect, Application Support, Software developer
@@ -122,7 +136,10 @@ This project was part of a government sponsored project with several work packag
 After a presegmentation of the mammography, more than 15000 features are extracted for each candidate region. These features are sorted with an information criterion and classified with an ensemble of classifiers popular within the data mining community. 
 
 ### Result
+![](images/cad.png)
 The result was a CAD engine, superior to the existing R2 cad engine. Prof. Carla Boetes† was so enthusiastic that she wanted to get European Funding to continue this project. Unfortunately, because of lack of interest from Agfa’s management and the passing away of Prof. Boetes, the project was stopped. To bypass FDA regulations for CAD engines, we amplified the detections of the micro-calcification engine within a Musica package, leaving the diagnosis up to the radiologists. Because of the strong amplification, it is nearly impossible for the radiologist to miss the malignant calcification, even after a long working day.
+
+![](images/mce1.png) ![](images/mce2.png)
  
 ### Responsibilities
 Project Lead, Software Architect, Software Developer
