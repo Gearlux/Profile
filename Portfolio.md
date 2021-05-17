@@ -102,50 +102,63 @@ Innovative, automatic methods to enhance mammography hanging protocols.
 
 ### Task
 Having access to many image processing methods for mammo, I was asked to contribute to the development of Agfa’s new mammography workstation, developed within the Agility project.
-Action
-With the application team, I identified a couple of features which were technically feasible to implement: nipple/breast alignment, background darkening, zoom to breast.  I also implemented a workflow engine, that can be configured to support the workflow that is used within a particular hospital. In addition, I invented and implemented UI improvements like synchronized zooming and a new zooming method for PACS applications. After a couple of years, I became team lead of the mammography workstation, leading a remote team of developers in Vienna. For the backend, I was the architect for a structured report engine extension which enabled many image processing addons, including third party applications.
-Result
-The results was a state of the art mammography workstation, which still is being demoed on RSNA and ECR as one of the flagships in the Agfa PACS portfolio.
-Responsibilities
-Scrum Master, Team Lead, Software Architect, Application Support, Software developer
-CAD for mammo
-Automatic detection and classification of micro-calcifications and masses in mammographies.
-Task
-This project was part of a government sponsored project with several work packages. I was the project lead for the mammograph package. 
-Action
-After a presegmentation of the mammography, more than 15000 features are extracted for each candidate region. These features are sorted with an information criterion and classified with an ensemble of classifiers popular within the data mining community. 
-Result
-The result was a CAD engine, superior to the existing R2 cad engine. Prof. Carla Boetes† was so enthusiastic that she wanted to get European Funding to continue this project. Unfortunately, because of lack of interest from Agfa’s management and the passing away of Prof. Boetes, the project was stopped. To bypass FDA regulations for CAD engines, we amplified the detections of the micro-calcification engine within a Musica package, leaving the diagnosis up to the radiologists. Because of the strong amplification, it is nearly impossible for the radiologist to miss the malignant calcification, even after a long working day.
 
-     
-Responsibilities
+### Action
+With the application team, I identified a couple of features which were technically feasible to implement: nipple/breast alignment, background darkening, zoom to breast.  I also implemented a workflow engine, that can be configured to support the workflow that is used within a particular hospital. In addition, I invented and implemented UI improvements like synchronized zooming and a new zooming method for PACS applications. After a couple of years, I became team lead of the mammography workstation, leading a remote team of developers in Vienna. For the backend, I was the architect for a structured report engine extension which enabled many image processing addons, including third party applications.
+
+### Result
+The results was a state of the art mammography workstation, which still is being demoed on RSNA and ECR as one of the flagships in the Agfa PACS portfolio.
+
+### Responsibilities
+Scrum Master, Team Lead, Software Architect, Application Support, Software developer
+
+## CAD for mammo
+Automatic detection and classification of micro-calcifications and masses in mammographies.
+
+### Task
+This project was part of a government sponsored project with several work packages. I was the project lead for the mammograph package. 
+
+### Action
+After a presegmentation of the mammography, more than 15000 features are extracted for each candidate region. These features are sorted with an information criterion and classified with an ensemble of classifiers popular within the data mining community. 
+
+### Result
+The result was a CAD engine, superior to the existing R2 cad engine. Prof. Carla Boetes† was so enthusiastic that she wanted to get European Funding to continue this project. Unfortunately, because of lack of interest from Agfa’s management and the passing away of Prof. Boetes, the project was stopped. To bypass FDA regulations for CAD engines, we amplified the detections of the micro-calcification engine within a Musica package, leaving the diagnosis up to the radiologists. Because of the strong amplification, it is nearly impossible for the radiologist to miss the malignant calcification, even after a long working day.
+ 
+### Responsibilities
 Project Lead, Software Architect, Software Developer
-Gridlines suppression
+
+## Gridlines suppression
 Automatic detection, modelling and correction of static anti-scatter grids in digital RX.
-Task
+
+### Task
 Build upon the technology of the Microlens-artefact correction project, a filter was designed to remove the anti scatter gridlines from the image. The high frequent pattern caused aliasing within the NX workstation display.
-Action
+
+### Action
 Patent searches showed that it was not trivial to suppress the gridlines while keeping the contrast needed for diagnostic imaging. Based on wavelet decomposition, I managed to develop a non-linear filter which was able to perfectly separate the diagnostic image content from the gridlines. Even steep edges are not affected by the filtering.
-Result
+
+### Result
 A new method for gridlines filtering, validated for CR and DR imaging
-Responsibilities
+
+### Responsibilities
 Software Developer
-Microlens-artefact correction
+
+## Microlens-artefact correction
 Automatic correction of periodic- and stitching artefacts with real-time implementation for DX-S.
-Task
+
+### Task
 Agfa’s new digitizer uses microlens array to read out the CR phosphor plates. When the phosphor plates are slightly out of focus, a periodic pattern with the period of the microlenses was visible. During the production assembly of the same digitizer, the glue between the microlens arrays caused a different refraction which disturbed the image signal.
-Action
+
+### Action
 Because the frequency of the microlenses arrays lies within the frequency range of the diagnostic content in the image, simple band stop filters also removed diagnostic content. I implemented a solution where the period signal was modelled with wavelets and where the wavelet coefficients are filtered to separate the diagnostic content from the microlens artefacts1. To correct the refraction artifact, a reference signal was taken and made deformable. This reference signal is adapted to best fit the image artifact2. The initial filter, designed in matlab, took 3 minutes to process one image. Different optimization techniques and tricks are implemented to reach the processing requirement of 1.5 seconds, the time needed for the digitizer to read the CR phosphor plate. The final filter was generated with a code generator because the resulting code was too complex to maintain by hand.
-Result
+
+### Result
 A validated filter which was able to process the images within time. During the lifetime of the digitizer, not a single bug or issue was filed.
-Responsibilities
+
+### Responsibilities
 Software Developer
-Statistical models of anatomical structures in digital RX
+
+## Statistical models of anatomical structures in digital RX
 In this IWT-project and associated PhD, this was my introduction to image processing in general and medical image processing in particular. The project was done within the Medical Image Computing group at the Medical Imaging Research Center at the University Hospital UZ Leuven - Gasthuisberg.
 
-Task
+### Task
 The main task of this project was the automatic registration, segmentation and classification of bones in digital RX for automatic bone age assessment with “active shape models”.  In order to build the models, non rigid point matching was used to align several manual segmented bones. The segmentation was made ‘efficient’ by using dynamic programming within a special UI application. Before registration large scale inhomogeneities caused by the heel effect are compensated. The registration is done hierarchically, where first the hand is located and this location is further drilled down to fingers and bones. The position of the bones is used as a starting position for the active shape models. 
-
-   
-
-
