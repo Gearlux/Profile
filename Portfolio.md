@@ -73,24 +73,34 @@ Identify opportunities for Agfa to improve its portfolio within Direct Radiograp
 Together with application and marketing, we contacted several radiographers and radiologists and interviewed them for their opinion on features, future vision, possible improvements, new technology. 
 
 ### Result
-The result was a roadmap where key topics were identified: mobile imaging, workflow, improved diagnosis and image consistency. This was the beginning of the development of the Tomosynthesis, SmartXR and Deep learning projects.
+The result was a roadmap where key topics were identified: mobile imaging, workflow, improved diagnosis and image consistency. This was the beginning of the development of the 
+[Tomosynthesis](Portfolio.md#tomosynthesis), 
+[SmartXR](Portfolio.md#smartxr) and 
+[Deep learning projects](Portfolio.md#deep-learning-projects).
+
 
 ### Responsibilities
 Innovation Manager, Software Architect, Team Lead
 
 ## Full Leg Full Spine
 Automatic image stitching of DR images. 
-Task
+
+### Task
 Develop a method for FLFS (Full Leg Full Spine) imaging for DR images with similar quality requirements as the one-shot CR FLFS.
-Action
+
+### Action
 I developed the interface to the modality, the module computing the optimal position of the images while keeping the X-ray source stable and the image processing module which stitches the images and detects possible patient movement during the acquisition. Because the old C R stitch grid, could not be used, I developed a new stitch grid which was enabled the correction of the patient movement and which was less disturbing for the radiologist. With the mechanical team in Munich, I co-designed a patient stand which ensures that the patient could stand still and protected the patient from the moving parts of the modality.
-Result
+
+### Result
 A new stitch grid, a new patient stand and new, more robust algorithms were designed, implemented and validated. 
-Responsibilities
+
+### Responsibilities
 Project Lead, Software Developer
-Mammography Workstation
+
+## Mammography Workstation
 Innovative, automatic methods to enhance mammography hanging protocols.
-Task
+
+### Task
 Having access to many image processing methods for mammo, I was asked to contribute to the development of Agfa’s new mammography workstation, developed within the Agility project.
 Action
 With the application team, I identified a couple of features which were technically feasible to implement: nipple/breast alignment, background darkening, zoom to breast.  I also implemented a workflow engine, that can be configured to support the workflow that is used within a particular hospital. In addition, I invented and implemented UI improvements like synchronized zooming and a new zooming method for PACS applications. After a couple of years, I became team lead of the mammography workstation, leading a remote team of developers in Vienna. For the backend, I was the architect for a structured report engine extension which enabled many image processing addons, including third party applications.
