@@ -1,4 +1,4 @@
-<img src="images/qr-code.png" width="200" height="150">
+<img src="images/qr-code.png" width="200" height="200">
 
 # Personal Details 
 
