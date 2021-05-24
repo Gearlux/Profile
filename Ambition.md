@@ -1,3 +1,34 @@
+<table class="tg">
+<thead>
+  <tr>
+    <td class="tg-73oq">Name</td>
+    <td class="tg-73oq">Behiels</td>
+    <td class="tg-73oq" rowspan="5"><img src="images/Profile.png" width="200" height="150"></td>
+    <td class="tg-73oq" rowspan="5"><a href="https://gearlux.github.io/Profile/">
+  <img src="images/qr-code.png" width="150" height="150">
+</a>
+</td>
+
+  </tr>
+  <tr>
+    <td class="tg-73oq">First name</td>
+    <td class="tg-73oq">Gert</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">Date of birth</td>
+    <td class="tg-73oq">Feb 1972</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">Place of residence</td>
+    <td class="tg-73oq">Edegem - Belgium</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">Nationality</td>
+    <td class="tg-73oq">Belgian</td>
+  </tr>
+</thead>
+</table>
+
 # Profile and Ambition
 
 I am a creative and innovative researcher who likes a challenge. I find it difficult to tolerate that some technical problems remain unsolved and will always go for the extra mile if I believe that a solution is within my capabilities. I am very efficient in the investigation and analysis of image processing, computer vision and related problems and during the break down of an application, I can become very enthusiastic if an ‘out of the box’ solution combined with already existing and proven techniques brings me closer to the final solution or product.
