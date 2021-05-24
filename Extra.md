@@ -41,7 +41,7 @@
 - Passionate windsurfer and skier. 
 - Playing badminton, running or biking when there is no wind or snow.
 - Team captain of the best veteran badminton team in Antwerp, where best stands for fair play, humor and tactical excellence.
-- Hobby-cook
+- Hobby cook
 
 # Interests
 - Music

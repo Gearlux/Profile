@@ -35,8 +35,8 @@
 
 |	  | Period	| Education & Projects	| Diploma |
 | --- | ------- | --------------------- | ------- |
-| [<img src="images/kuleuven.png">](https://www.kuleuven.be/kuleuven/) | 1990-1994 | **Master of Science in Physics** <br> Graduated Magna Cum Laude (75.5%)  <br> Major: Mathematical Plasma-Astrophysics | Yes |
-| [<img src="images/kuleuven.png">](https://www.kuleuven.be/kuleuven/) | 1994-1996	| **Master of Science in Applied Informatics** <br> Graduated Cum Laude (74.4%)  <br> First in class <br> Major: Computer Graphics | Yes |
+| [<img src="images/kuleuven.png">](https://www.kuleuven.be/kuleuven/) | 1990-1994 | **Master of Science in Physics** <br> Major: Mathematical Plasma-Astrophysics | Yes |
+| [<img src="images/kuleuven.png">](https://www.kuleuven.be/kuleuven/) | 1994-1996	| **Master of Science in Applied Informatics** <br> First in class <br> Major: Computer Graphics | Yes |
 | [<img src="images/kuleuven.png">](https://www.kuleuven.be/kuleuven/)	| 1998-2002	 | **PhD Program – Medical Image Processing** <br> Automatic registration, segmentation and <br> classification of bones in digital RX <br> for automatic bone age assessment with “active shape models” | No |
 
 ## Courses
